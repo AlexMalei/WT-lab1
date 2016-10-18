@@ -2,6 +2,8 @@ package test.by.bsuir.test13;
 
 import by.bsuir.task12.Book;
 import by.bsuir.task13.ProgrammerBook;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -49,7 +51,7 @@ public class ProgrammerBookTest {
     @Test
     public void toStringTest(){
         System.out.println(programmerBook.toString());
-        assertEquals("by.bsuir.task13.ProgrammerBook@title:Title author:Author edition:2014 price:123 language:English level:5"
+        assertEquals("by.bsuir.task13.ProgrammerBook@title:Title author:Author edition:2014 price:123 isbn:0 language:English level:5"
                 , programmerBook.toString());
     }
 

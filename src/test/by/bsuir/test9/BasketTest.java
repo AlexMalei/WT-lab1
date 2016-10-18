@@ -1,4 +1,4 @@
-package test.by.bsuir.task9;
+package test.by.bsuir.test9;
 
 import by.bsuir.task9.Ball;
 import by.bsuir.task9.Basket;

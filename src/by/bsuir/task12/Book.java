@@ -1,6 +1,5 @@
 package by.bsuir.task12;
 
-import java.util.Comparator;
 
 public class Book implements Cloneable, Comparable<Book>{
     private String title;
@@ -82,29 +81,34 @@ public class Book implements Cloneable, Comparable<Book>{
         }
         Book book = (Book)obj;
 
-        if (title == null){
-            if (book.title != null){
+        if (isbn != book.isbn){
+            return false;
+        }
+        else {
+            if (title == null) {
+                if (book.title != null) {
+                    return false;
+                }
+            } else if (!title.equals(book.title)) {
                 return false;
             }
-        } else if (!title.equals(book.title)){
-            return false;
-        }
 
-        if (author == null){
-            if (book.author != null){
+            if (author == null) {
+                if (book.author != null) {
                     return false;
+                }
+            } else if (!author.equals(book.author)) {
+                return false;
             }
-        } else if (!author.equals(book.author)){
-            return false;
         }
-
         return true;
 
     }
 
     @Override
-    public String toString() { //стоит ли писать this  в методах класса??
-        return getClass().getName() + "@title:" + title + " author:"+ author + " edition:" + edition + " price:" + price + " isbn:" + isbn;
+    public String toString() {
+        return getClass().getName() + "@title:" + title + " author:"+ author + " edition:"
+                + edition + " price:" + price + " isbn:" + isbn;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package test.by.bsuir.task1;
+package test.by.bsuir.test1;
 
 import by.bsuir.task1.MathSample;
 import org.junit.*;

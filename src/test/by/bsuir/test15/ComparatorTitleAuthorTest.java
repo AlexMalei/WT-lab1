@@ -2,7 +2,6 @@ package test.by.bsuir.test15;
 
 import by.bsuir.task12.Book;
 
-import by.bsuir.task15.ComparatorTitle;
 import by.bsuir.task15.ComparatorTitleAuthor;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -27,13 +26,13 @@ public class ComparatorTitleAuthorTest {
     }
 
     @Test
-    public void comparatorGreaterTest(){
+    public void comparatorTestDifferentTitles(){
         Book book = new Book("Title1", "Author1", 342, 353);
         assertTrue(comparatorTitleAuthor.compare(book, ComparatorTitleAuthorTest.book) > 0);
     }
 
     @Test
-    public void comparatorLessTest(){
+    public void comparatorTestEqualsTitles(){
         Book book = new Book("Title", "Autho", 342, 353);
         assertTrue(comparatorTitleAuthor.compare(book, ComparatorTitleAuthorTest.book) < 0);
     }

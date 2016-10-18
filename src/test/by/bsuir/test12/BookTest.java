@@ -16,6 +16,7 @@ public class BookTest {
         book.setAuthor("Author");
         book.setPrice(123);
         book.setTitle("Title");
+        book.setIsbn(3);
     }
 
     @Test
@@ -24,6 +25,7 @@ public class BookTest {
         book.setTitle("Title");
         book.setPrice(123);
         book.setAuthor("Author");
+        book.setIsbn(3);
         assertTrue(BookTest.book.equals(book));
     }
 
@@ -33,12 +35,13 @@ public class BookTest {
         book.setTitle("NewTitle");
         book.setPrice(1234);
         book.setAuthor("NewAuthor");
+        book.setIsbn(45);
         assertFalse(BookTest.book.equals(book));
     }
 
     @Test
     public void toStringTest(){
-        assertEquals("by.bsuir.test12.Book@title:Title author:Author edition:2014 price:123", book.toString());
+        assertEquals("by.bsuir.task12.Book@title:Title author:Author edition:2014 price:123 isbn:3", book.toString());
     }
 
     @Test

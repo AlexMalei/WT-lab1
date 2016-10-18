@@ -1,8 +1,7 @@
 package by.bsuir.task3;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+
 
 public class Function {
     public HashMap<Double, Double> calculateFunction(double beginSection, double endSection, double step) throws Exception {

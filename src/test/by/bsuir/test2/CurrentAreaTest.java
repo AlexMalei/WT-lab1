@@ -1,4 +1,4 @@
-package test.by.bsuir.task2;
+package test.by.bsuir.test2;
 
 import by.bsuir.task2.CurrentArea;
 import by.bsuir.task2.Point;

@@ -1,8 +1,6 @@
-package test.by.bsuir.task3;
+package test.by.bsuir.test3;
 
-import by.bsuir.task1.MathSample;
 import by.bsuir.task3.Function;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -11,7 +9,6 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.TreeMap;
 
 import static org.junit.Assert.*;
 @RunWith(Parameterized.class)

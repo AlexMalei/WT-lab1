@@ -50,6 +50,7 @@ public class Basket {
     public static void main(String[] args) {
         Basket basket = new Basket(new ArrayList<>(5));
         basket.addBall(new Ball(Color.GREEN, 4.5));
-        System.out.println(basket);
+        System.out.println(basket.getCountBlueBalls());
+        System.out.println(basket.getWeightAllBalls());
     }
 }

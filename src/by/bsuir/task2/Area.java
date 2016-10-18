@@ -12,7 +12,8 @@ public class Area {
     }
 
     boolean containPoint(Point point ){
-        if ((point.X >= basePoint.X ) && (point.X <= basePoint.X + width) && (point.Y <= basePoint.Y) && (point.Y >= basePoint.Y - height))
+        if ((point.X >= basePoint.X ) && (point.X <= basePoint.X + width)
+                && (point.Y <= basePoint.Y) && (point.Y >= basePoint.Y - height))
             return true;
         else
             return false;

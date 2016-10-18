@@ -1,24 +1,11 @@
 package by.bsuir.task4;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
 
 public class ArrayChecking{
 
     private int[] array = null;
 
-    public ArrayChecking(int countElements) {
-        array = new int[countElements];
-        generateArray();
-    }
-
-    private void generateArray() {
-        Random random = new Random();
-        for (int i = 0; i < array.length; i++){
-            array[i] = random.nextInt(1000) + 1;
-        }
-    }
 
     public ArrayChecking(int[] array){
         this.array = array;
